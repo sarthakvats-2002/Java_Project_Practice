@@ -2,9 +2,9 @@ package com.flipkart.bean;
 
 public class Customer {
 
-      private int customerId;
-      private String customerName;
-      private String customerAddress;
+    private int customerId;
+    private String customerName;
+    private String customerAddress;
 
 
     public void setCustomerId(int customerId) {
@@ -18,8 +18,6 @@ public class Customer {
     public void setCustomerAddress(String customerAddress) {
         this.customerAddress = customerAddress;
     }
-
-
 
     public int getCustomerId() {
         return customerId;
