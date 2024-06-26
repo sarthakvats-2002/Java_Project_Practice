@@ -6,6 +6,12 @@ public class Customer {
     private String customerName;
     private String customerAddress;
 
+//    // Constructor
+//    public Customer(int customerId, String customerName, String customerAddress) {
+//        this.customerId = customerId;
+//        this.customerName = customerName;
+//        this.customerAddress = customerAddress;
+//    }
 
     public void setCustomerId(int customerId) {
         this.customerId = customerId;

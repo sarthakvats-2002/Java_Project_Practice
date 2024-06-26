@@ -3,7 +3,7 @@ package com.flipkart.business;
 import com.flipkart.bean.Customer;
 
 
-public class CustomerBussiness implements CustomerInterface {
+public class CustomerBusiness implements CustomerInterface {
 
     Customer[] customer = new Customer[3];
 
@@ -65,3 +65,67 @@ public class CustomerBussiness implements CustomerInterface {
 
     }
 }
+
+//
+//
+//package com.flipkart.business;
+//
+//import com.flipkart.bean.Customer;
+//
+//import java.util.ArrayList;
+//import java.util.List;
+//
+//public class CustomerBusiness implements CustomerInterface {
+//
+//    private List<Customer> customers = new ArrayList<>();
+//
+//
+//    public void createCustomer() {
+//        System.out.println("Creating new customers...");
+//
+//        // Add customers to the list
+//        customers.add(new Customer(101, "John Doe", "Address 1"));
+//        customers.add(new Customer(102, "Jane Smith", "Address 2"));
+//        customers.add(new Customer(103, "Bob Johnson", "Address 3"));
+//    }
+//
+//
+//    public boolean updateCustomer(int customerId, String name, String address) {
+//        for (Customer customer : customers) {
+//            if (customer.getCustomerId() == customerId) {
+//                System.out.println("Updating customer with ID: " + customerId);
+//                // Perform update logic if needed
+//                customer.setCustomerName(name);
+//                customer.setCustomerAddress(address);
+//                return true;
+//            }
+//        }
+//        System.out.println("Customer with ID " + customerId + " not found.");
+//        return false;
+//    }
+//
+//
+//    public boolean deleteCustomer(int customerId) {
+//        for (Customer customer : customers) {
+//            if (customer.getCustomerId() == customerId) {
+//                System.out.println("Deleting customer with ID: " + customerId);
+//                customers.remove(customer);
+//                return true; // Return true if deletion successful
+//            }
+//        }
+//        System.out.println("Customer with ID " + customerId + " not found.");
+//        return false; // Return false if customer not found
+//    }
+//
+//    public void listCustomer() {
+//        System.out.println("Listing all customers...");
+//
+//        for (Customer customer : customers) {
+//            if (customer != null) {
+//                System.out.println("Details of customer--->" + customer.getCustomerId() + "--->" + customer.getCustomerName() + "--->" + customer.getCustomerAddress());
+//            }
+//        }
+//        }
+//
+//}
+//
